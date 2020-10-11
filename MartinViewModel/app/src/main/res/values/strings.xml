@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MartinViewModel</string>
+    <string name="waves">&#160;waves!</string>
+    <string name="wave_button">wave</string>
+</resources>
