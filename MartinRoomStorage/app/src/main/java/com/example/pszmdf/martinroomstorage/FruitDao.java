@@ -1,5 +1,7 @@
 package com.example.pszmdf.martinroomstorage;
 
+import android.database.Cursor;
+
 import java.util.List;
 
 import androidx.room.Dao;
@@ -15,6 +17,9 @@ public interface FruitDao {
 
     @Query("DELETE FROM fruit_table")
     void deleteAll();
+
+    @Query("SELECT * FROM fruit_table")
+    Cursor getAllFruit();
 
     @Query("SELECT * FROM fruit_table ORDER BY name ASC")
     List<Fruit> getAlphabetizedFruit();

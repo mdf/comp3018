@@ -13,7 +13,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-@Database(entities = {Fruit.class}, version = 5, exportSchema = false) // drop and recreat
+@Database(entities = {Fruit.class}, version = 5, exportSchema = false)
 public abstract class MyRoomDatabase extends RoomDatabase {
 
     public abstract FruitDao fruitDao();
@@ -45,8 +45,6 @@ public abstract class MyRoomDatabase extends RoomDatabase {
 
             Log.d("g53mdp", "dboncreate");
             databaseWriteExecutor.execute(() -> {
-                // Populate the database in the background.
-                // If you want to start with more words, just add them.
                 FruitDao fruitDao = INSTANCE.fruitDao();
                 fruitDao.deleteAll();
 
