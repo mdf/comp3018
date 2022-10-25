@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="cat_names">
+        <item>scribble</item>
+        <item>gucci</item>
+        <item>zinc</item>
+        <item>pippin</item>
+        <item>scribble</item>
+        <item>gucci</item>
+        <item>zinc</item>
+        <item>pippin</item>
+    </string-array>
+</resources>
